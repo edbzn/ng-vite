@@ -1,18 +1,26 @@
-# Angular + Vite + Playwright
+## Angular + Vite + Vitest + Playwright
 
-## Setup
+See important notes in [vite.config.ts](./vite.config.ts).
+
+### Setup
 
 ```sh
 yarn
 ```
 
-## Serve
+### Serve
 
 ```
 yarn dev
 ```
 
-## E2E
+### Test
+
+```
+yarn test
+```
+
+### E2E
 
 ```
 yarn e2e
