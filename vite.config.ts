@@ -1,20 +1,14 @@
 /// <reference types="vitest" />
 
-// If you want to support "styleUrls" and "templateUrl" you have to use the following plugin.
-// But note that Vitest fails for unknown reason if you declare it, so keep it unused.
-import { ViteAngularPlugin } from '@nxext/angular-vite';
 import { defineConfig } from 'vite';
+import { AngularVitePlugin } from './vite-plugin';
 
 export default defineConfig(({ mode }) => ({
   root: 'src',
 
-  // Uncomment to support "styleUrls" and "templateUrl":
-  //
-  // plugins: [
-  //   ViteAngularPlugin({
-  //     target: 'es2020',
-  //   }),
-  // ],
+  plugins: [
+    AngularVitePlugin()
+  ],
   
   test: {
     globals: true,
