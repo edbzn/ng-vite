@@ -5,7 +5,9 @@ import { AngularVitePlugin } from './vite-plugin';
 
 export default defineConfig(({ mode }) => ({
   root: 'src',
-
+  
+  /* The plugin bring support for templateUrl and styleUrls. You can run Vite without but you have 
+   * to write inline template and styles. */
   plugins: [
     AngularVitePlugin()
   ],
